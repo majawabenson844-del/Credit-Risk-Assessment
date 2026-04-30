@@ -13,7 +13,7 @@ from sklearn.ensemble import StackingClassifier
 from sklearn.linear_model import LogisticRegression
 
 # 1. Load dataset
-path = "C:/Users/ACCENTURE/OneDrive/Desktop/system project/combined_solar_dataset.csv"
+path = "combined_solar_dataset.csv"
 df = pd.read_csv(path)
 
 # 2. Rename columns to match your dataset
