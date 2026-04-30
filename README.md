@@ -1,12 +1,12 @@
-# 🌍 Groundwater Potential Mapping Prediction System (SVM + Boruta)
+# 🌍 Credit Risk Assessment System (SVM + RF +Ensembled + Boruta)
 
-This is an **AI-powered decision support system** for predicting Groundwater potential areas (High vs Low) using a Support Vector Machine (SVM) model. The system is fully production-ready and deployed using **Streamlit** with a modern user interface
+This is an AI-powered decision support system for Credit Risk Assessment (Potential defaulters and Non defaulters) using a Support Vector Machine (SVM) model, Random Forest and an Ensembled model combing Support Vector Machine (SVM) model, Random Forest. The system is fully production-ready and deployed using Streamlit with a modern user interface
 
 ---
 
 ## 🚀 Features
 
-- 🔮 Machine Learning prediction (SVM with RBF kernel)
+- 🔮 Machine Learning prediction (SVM, RF with RBF kernel)
 - 🧠 Boruta feature selection
 - 🔢 Ordinal categorical encoding
 - 📏 StandardScaler normalization
