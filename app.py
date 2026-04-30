@@ -72,7 +72,7 @@ data = None
 default_values = {}
 
 try:
-    path = "C:/Users/ACCENTURE/OneDrive/Desktop/system project/combined_solar_dataset.csv"
+    path = "combined_solar_dataset.csv"
     data = pd.read_csv(path)
 
     data.columns = [
