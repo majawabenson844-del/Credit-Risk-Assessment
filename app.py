@@ -183,16 +183,11 @@ elif page == "Predict":
         # Number of Dependents (continuous)
         user_inputs['Number_Dependents'] = st.number_input("🔸 Number of Dependents", min_value=0, step=1)
 
-       # Loan Amount input with minimum value 10
-     loan_amount = st.number_input(
-    "Loan Amount",
-    min_value=10,   # 👈 ensures only 10 or above
-    step=1
-)
-
-# Show error if someone tries to go below 10
-if loan_amount < 10:
-    st.error("⚠️Loan amount must be at least 10")
+        # Loan Amount (continuous, must be >= 10)
+        loan_amount = st.number_input("🔸 Loan Amount", min_value=10, step=1)
+        if loan_amount < 10:
+            st.error("⚠️ Loan amount must be at least 10")
+        user_inputs['Loan_Amount'] = loan_amount
 
         # Sidebar model choice
         st.sidebar.subheader("Choose Model")
@@ -201,6 +196,8 @@ if loan_amount < 10:
         if st.button("✨ Predict Decision"):
             if age < 18:
                 st.error("⚠️ Age must be 18 years or older to proceed.")
+            elif loan_amount < 10:
+                st.error("⚠️ Loan amount must be at least 10 to proceed.")
             else:
                 try:
                     if scaler is None or encoder is None:
@@ -253,6 +250,7 @@ if loan_amount < 10:
                     st.error(f"System Error: {e}")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 # ===============================
