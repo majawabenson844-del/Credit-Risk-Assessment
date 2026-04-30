@@ -1,4 +1,4 @@
-# 🌍 Credit Risk Assessment System (SVM + RF +Ensembled + Boruta)
+# 💳 Credit Risk Assessment System (SVM + RF +Ensembled + Boruta)
 
 This is an AI-powered decision support system for Credit Risk Assessment (Potential defaulters and Non defaulters) using a Support Vector Machine (SVM) model, Random Forest and an Ensembled model combing Support Vector Machine (SVM) model, Random Forest. The system is fully production-ready and deployed using Streamlit with a modern user interface
 
