@@ -6,7 +6,7 @@ import joblib
 # Page Config
 # ===============================
 st.set_page_config(
-    page_title="Loan Decision Prediction System",
+    page_title="Credit Risk Assessment System",
     page_icon="💳",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -48,6 +48,7 @@ label { font-size:20px !important; font-weight:800 !important; color:#f5c77a !im
     unsafe_allow_html=True,
 )
 
+# ===
 # ===============================
 # Load Artifacts
 # ===============================
