@@ -105,7 +105,7 @@ except Exception as e:
 # ===============================
 # Sidebar
 # ===============================
-st.sidebar.title("💳 Loan Decision Prediction")
+st.sidebar.title("💳 Credit Risk")
 page = st.sidebar.radio(
     "Navigation", ["Home", "Predict", "Model Info", "Feature Guide", "About"]
 )
@@ -115,7 +115,7 @@ page = st.sidebar.radio(
 # ===============================
 if page == "Home":
     st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.title("💳 Loan Decision  System")
+    st.title("💳 Credit Risk Assessment system")
     st.write(
         """
 A **decision support system** built with:
@@ -137,7 +137,7 @@ By BENSON T MAJAWA
 # ===============================
 elif page == "Predict":
     st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.title("🔮 Predict Loan Decision")
+    st.title("🔮 Credit Risk Assessment")
     st.write("### Select values for the predictors:")
 
     if selected_features is None:
