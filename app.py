@@ -115,7 +115,7 @@ page = st.sidebar.radio(
 # ===============================
 if page == "Home":
     st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.title("💳 Loan Decision Prediction System")
+    st.title("💳 Loan Decision  System")
     st.write(
         """
 A **decision support system** built with:
