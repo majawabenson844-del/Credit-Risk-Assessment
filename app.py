@@ -184,7 +184,7 @@ elif page == "Predict":
         user_inputs['Number_Dependents'] = st.number_input("🔸 Number of Dependents", min_value=0, step=1)
 
        # Loan Amount input with minimum value 10
-loan_amount = st.number_input(
+     loan_amount = st.number_input(
     "Loan Amount",
     min_value=10,   # 👈 ensures only 10 or above
     step=1
@@ -192,7 +192,7 @@ loan_amount = st.number_input(
 
 # Show error if someone tries to go below 10
 if loan_amount < 10:
-    st.error("Loan amount must be at least 10")
+    st.error("⚠️Loan amount must be at least 10")
 
         # Sidebar model choice
         st.sidebar.subheader("Choose Model")
